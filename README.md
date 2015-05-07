@@ -18,7 +18,7 @@ Index = /mnt/Storage/sync/hg19
 
 And then use it like this:
 
-`
+```
 import Conf
 
 cf = Conf("rule.conf")
@@ -30,4 +30,4 @@ print cf.basis.time
 print cf.bowtie
 print cf.bowtie.path
 print cf.bowtie.index
-`
+```
