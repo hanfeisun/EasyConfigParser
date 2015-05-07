@@ -19,7 +19,10 @@ Index = /mnt/Storage/sync/hg19
 And then use it like this:
 
 ```
-import Conf
+from meta import Section, Base
+class Conf(Base):
+    basis = Section(["user", "time"])
+    bowtie = Section(["path", "index"])
 
 cf = Conf("rule.conf")
 
